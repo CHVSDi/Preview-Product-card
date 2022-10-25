@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-@media (max-width: 1440px) {
 
     * {
         margin: 0;
@@ -165,137 +164,171 @@
         left: 450px;
     }   
 
-}
-
-@media (max-width: 375px) {
+@media (max-width: 1189px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        font-size: 14px;
+    }
     
     :root {
-        /*Primary colors*/
+        /**Primary colors**/
         --dark-cyan: hsl(159, 41%, 27%);
         --very-dark-cyan: hsl(159, 40%, 18%);
         --cream: hsl(30, 38%, 92%);
-        /*Neutral colors*/
+        /**Neutral colors**/
         --very-Dark-blue: hsl(212, 21%, 14%);
         --dark-greyish-blue: hsl(228, 12%, 48%);
         --white: hsl(0, 0%, 100%);
     }
-
+    
     body {
         max-width: 100%;
-    }
-
-    .container {
+        background-color: var(--cream);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 410px;
-        height: 750px;
-        position: absolute;
-        left: 25px;
-        top: 25px;
-        background-color: var(--white);
-    }
-    .container img {
-        visibility: hidden;
-    }
-    .container #mobile-img {
-        visibility: visible;
-        position: absolute;
-        width: 410px;
-        height: 260px;
-        right: 0px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0;
-    }
-
-    .container .especifications {
-        position: absolute;
-        right: 599px;
-        top: 405px;
-        width: 425px;
         margin: 0;
-        font-size: 20px;
+        padding: 0;
     }
-
-    .container .product {
-        position:absolute;
-        left: 645px;
-        top: -115px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 19px;
-        letter-spacing: 9px;
-        color: var(--dark-greyish-blue)
+    
+    main {
+        margin: 0;
+        padding: 0;
     }
-
+    
+    .container {
+        align-items: center;
+        position: absolute;
+        top: 150px;
+        left: 350px;
+        background-color: white;
+        width: 49%;
+        border-radius: 15px;
+    }
+    
+    .container img {
+        width: 400px;
+        height: 400px;;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    
     .container .name {
+        font-family: "Fraunces", sans-serif;
+        font-size: 30px;
+        line-height: 1;
+        width: 200px;
         position: absolute;
-        left: 645px;
-        top: -75px;
-        width: 360px;;
-        font-size: 42px;
+        right: 90px;
+        top: 60px;
     }
-
+    
     .container .description {
+        font-family: "Montserrat", sans-serif;
+        width: 250px;
+        line-height: 1.5;
         position: absolute;
-        left: 645px;
-        width: 370px;
-        font-size: 20px;
-        top: 20px;
+        right: 40px;
+        top: 170px;
     }
-
+    
     .container .costs {
         position: absolute;
-        left: 645px;
+        left: 25px;
     }
-
+    
     .descount {
+        font-family: "Fraunces", sans-serif;
+        color: var(--dark-cyan);  
         position: absolute;
-        left: 645px;
-        top: 185px
+        right: 160px;
+        top: 280px;
     }
-
+    
     .price {
         position: absolute;
-        left: 825px;
-        top: 200px;
-        font-size: large;
-        color: var(--dark-greyish-blue);
+        right: 100px;
+        top: 295px;
+        text-decoration: line-through;
     }
-
+    
     .button {
         position: absolute;
-        left: 634px;
-        top: 255px;
-        height: 60px;
-        width: 370px;
-        border-radius: 15px;
-        font-weight: bold;
+        top: 338px;
+        left: 300px;
         background-color: var(--dark-cyan);
+        width: 240px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
     }
-
+    
+    .especifications {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .especifications:active .button {
+        background-color: var(--very-dark-cyan);
+        margin: 0;
+        padding: 0;
+    }
+    
+    #mobile-img {
+        position: absolute;
+        visibility:hidden;
+        width: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    
     .button p {
         position: absolute;
-        left: 140px;
-        top: 20px;
-        font-size: 15px;
-        font-weight: bold;
-        letter-spacing: 2px;
+        top: 13px;
+        left: 90px;
         color: var(--white);
+        text-align: center;
     }
 
     .button svg {
         position: absolute;
-        left: -25px;
-        top: 1px;
-        
+        right: 70px;
     }
-
+    
+    .container .product {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 5.5px;
+        font-weight: light;
+        text-transform: uppercase;
+        font-size: small;
+        color: var(--dark-greyish-blue);
+        position: absolute;
+        right: 190px;
+        top: 25px;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 80px;
+    }
+    
     .attribution {
         position: absolute;
-        left: 58px;
-        top: 780px;
-        width: 350px;
-    }
+        top: 565px;
+        left: 450px;
+    }   
+
 }
 
 @media (max-height: 375px) {
@@ -464,4 +497,134 @@
         top: 355px;
         left: 130px;
     }  
+}
+
+@media (max-width: 375px) {
+    :root {
+        /*Primary colors*/
+        --dark-cyan: hsl(159, 41%, 27%);
+        --very-dark-cyan: hsl(159, 40%, 18%);
+        --cream: hsl(30, 38%, 92%);
+        /*Neutral colors*/
+        --very-Dark-blue: hsl(212, 21%, 14%);
+        --dark-greyish-blue: hsl(228, 12%, 48%);
+        --white: hsl(0, 0%, 100%);
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 410px;
+        height: 750px;
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        background-color: var(--white);
+    }
+    .container img {
+        visibility: hidden;
+    }
+    .container #mobile-img {
+        visibility: visible;
+        position: absolute;
+        width: 410px;
+        height: 260px;
+        right: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    .container .especifications {
+        position: absolute;
+        right: 599px;
+        top: 405px;
+        width: 425px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .container .product {
+        position:absolute;
+        left: 645px;
+        top: -115px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 19px;
+        letter-spacing: 9px;
+        color: var(--dark-greyish-blue)
+    }
+
+    .container .name {
+        position: absolute;
+        left: 645px;
+        top: -75px;
+        width: 360px;;
+        font-size: 42px;
+    }
+
+    .container .description {
+        position: absolute;
+        left: 645px;
+        width: 370px;
+        font-size: 20px;
+        top: 20px;
+    }
+
+    .container .costs {
+        position: absolute;
+        left: 645px;
+    }
+
+    .descount {
+        position: absolute;
+        left: 645px;
+        top: 185px
+    }
+
+    .price {
+        position: absolute;
+        left: 825px;
+        top: 200px;
+        font-size: large;
+        color: var(--dark-greyish-blue);
+    }
+
+    .button {
+        position: absolute;
+        left: 634px;
+        top: 255px;
+        height: 60px;
+        width: 370px;
+        border-radius: 15px;
+        font-weight: bold;
+        background-color: var(--dark-cyan);
+    }
+
+    .button p {
+        position: absolute;
+        left: 140px;
+        top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: var(--white);
+    }
+
+    .button svg {
+        position: absolute;
+        left: -25px;
+        top: 1px;
+        
+    }
+
+    .attribution {
+        position: absolute;
+        left: 58px;
+        top: 780px;
+        width: 350px;
+    }
 }
