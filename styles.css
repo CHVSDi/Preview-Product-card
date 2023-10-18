@@ -12,7 +12,7 @@
     :root {
         /**Primary colors**/
         --dark-cyan: hsl(159, 41%, 27%);
-        --very-dark-cyan: hsl(159, 40%, 18%);
+        --very-dark-cyan: #1a4030;
         --cream: hsl(30, 38%, 92%);
         /**Neutral colors**/
         --very-Dark-blue: hsl(212, 21%, 14%);
